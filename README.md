@@ -22,8 +22,10 @@ Mainly it is important to understand some concepts that join with the theme of T
     <p>
     * focus on the example: Producer and Consumer extend Thread, also in some cases it is possible to implement the runnable interface but in this case will be instantiated in the main and used in Place (class of the object they use) and which will carry its flow.</p>
 <div style="text-align: center">
+
 ![Thread of Producer](images\prodthread.png)
 ![Thread of Consumer](images\consthread.png)
+
 </div>
 </div>
 <div style="text-align: justify">
@@ -61,6 +63,7 @@ These are methods used in Object and Thread Class:
 <div style="text-align: center">
 
 ![Thread of Producer](images\methods.png)
+
 </div>
 <p>
  Also the run method which this method is called if this thread was built using a separate Runnable run object, otherwise this method does nothing and returns.
@@ -70,6 +73,7 @@ These are methods used in Object and Thread Class:
 ![Thread of Producer](images\run.png)
 ![Thread of Producer](images\consumflow.png)
 ![Thread of Consumer](images\prodflow.png)
+
 </div>
 <p>
 The synchronized method is very helpful and fundamental for the management of the threads because through these methods is solved the problem of using the same resource with different actions and instances.
@@ -77,6 +81,7 @@ When a thread starts to execute a synchronized instance method, it automatically
 <div style="text-align: center">
 
 ![Thread of Producer](images\sinc.png)
+
 </div>
 </p>
 As seen in the producer and consumer code in their Place class which in this case is the yarn handler, they are different synchronization methods and both use the methods:
@@ -89,9 +94,8 @@ But if both methods use the same then, what is the difference, the difference is
 <div style="text-align: center">
 
 ![Thread of Producer](images\flow.png)
+
 </div>
+
 [Prod-Cons-Repo-Git-YS](https://github.com/yesi-aracawa/ProducerConsumer)
 </div>
-
-
-
