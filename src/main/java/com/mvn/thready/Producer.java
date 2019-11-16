@@ -1,17 +1,17 @@
 package com.mvn.thready;
 
 public class Producer extends Thread {
-    private CubbyHole cubbyhole;
+    private Place place;
     private int number;
 
-    public Producer(CubbyHole c, int number) {
-        cubbyhole = c;
+    public Producer(Place c, int number) {
+        place = c;
         this.number = number;
     }
 
     public void run() {
         for (int i = 0; i < 10; i++) {
-            cubbyhole.put(i);
+            place.put(i);
             System.out.println("Producer #" + this.number + " put: " + i);
             try {
                 sleep((int)(Math.random() * 100));

@@ -1,6 +1,6 @@
 package com.mvn.thready;
 
-public class CubbyHole {
+public class Place {
     private int contents;
     private boolean available = false;
     public synchronized int get() {
